@@ -6,15 +6,15 @@ class MenuItemTile extends StatefulWidget {
   final IconData icon;
   final AnimationController animationController;
   final bool isSelected;
-  final Function onTap;
+  final dynamic onTap;
 
   const MenuItemTile({
-    Key key,
-    @required this.title,
-    @required this.icon,
-    this.animationController,
+    Key? key,
+    required this.title,
+    required this.icon,
+    required this.animationController,
     this.isSelected = false,
-    this.onTap,
+    required this.onTap,
   }) : super(key: key);
 
   @override
@@ -22,7 +22,7 @@ class MenuItemTile extends StatefulWidget {
 }
 
 class _MenuItemTileState extends State<MenuItemTile> {
-  Animation<double> _animation, _sizedBoxAnimation;
+  late Animation<double> _animation, _sizedBoxAnimation;
 
   @override
   void initState() {

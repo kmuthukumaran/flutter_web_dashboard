@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class ProfileWidget extends StatelessWidget {
   const ProfileWidget({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 
@@ -124,7 +124,7 @@ class ProfileWidget extends StatelessWidget {
                     Container(
                       height: 45,
                       width: 120,
-                      child: RaisedButton(
+                      child: MaterialButton(
                         color: Color(0xff7560ED),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),

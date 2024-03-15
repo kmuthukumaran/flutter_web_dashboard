@@ -4,8 +4,8 @@ import 'package:flutter_web_dashboard/src/commons/theme.dart';
 
 class QuickContact extends StatelessWidget {
   const QuickContact({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 
@@ -29,7 +29,7 @@ class QuickContact extends StatelessWidget {
             content: Text('Your Message has been sent.'),
             actions: <Widget>[
               // usually buttons at the bottom of the dialog
-               FlatButton(
+               MaterialButton(
                 child:  Text('Close'),
                 onPressed: () {
                   Navigator.of(context).pop();

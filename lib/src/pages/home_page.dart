@@ -15,19 +15,19 @@ class HomePage extends StatelessWidget {
               SizedBox(width: 300),
               CardTile(
                 iconBgColor: Colors.orange,
-                cardTitle: 'Booking',
+                cardTitle: 'Booking', icon: Icons.no_cell_outlined, mainText: '', subText: '',
               ),
               SizedBox(width: 30),
               CardTile(
-                iconBgColor: Colors.pinkAccent,
+                iconBgColor: Colors.pinkAccent, cardTitle: '', mainText: '', subText: '', icon: Icons.no_cell_outlined,
               ),
               SizedBox(width: 30),
               CardTile(
-                iconBgColor: Colors.green,
+                iconBgColor: Colors.green,cardTitle: '', mainText: '', subText: '', icon: Icons.no_cell_outlined,
               ),
               SizedBox(width: 30),
               CardTile(
-                iconBgColor: Colors.lightBlueAccent,
+                iconBgColor: Colors.lightBlueAccent,cardTitle: '', mainText: '', subText: '', icon: Icons.no_cell_outlined,
               ),
               SizedBox(width: 30),
             ],

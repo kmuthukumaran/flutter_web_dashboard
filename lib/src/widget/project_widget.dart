@@ -4,8 +4,8 @@ import 'package:flutter_web_dashboard/src/model/project_model.dart';
 
 class ProjectWidget extends StatelessWidget {
   const ProjectWidget({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 

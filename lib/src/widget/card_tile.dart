@@ -10,12 +10,12 @@ class CardTile extends StatelessWidget {
   final String subText;
 
   const CardTile(
-      {Key key,
-      this.cardTitle,
-      this.icon,
-      this.iconBgColor,
-      this.mainText,
-      this.subText})
+      {Key? key,
+      required this.cardTitle,
+      required this.icon,
+      required this.iconBgColor,
+      required this.mainText,
+      required this.subText})
       : super(key: key);
 
   @override
